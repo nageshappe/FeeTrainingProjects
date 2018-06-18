@@ -42,7 +42,7 @@ fetchCurrentTemperature(cityName:string)
     const data = rsp.json();
    console.log(data);
    this.temperature={
-     currentWeatherImageURL : data.weather.icon,
+     currentWeatherImageURL : data.weather.icon+".png",
      temperatureInCelsius :Math.round(data.main.temp-270),
      temperatureInFarenheit :0,
      temperatureInKelvin :0
