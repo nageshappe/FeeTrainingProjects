@@ -1,0 +1,7 @@
+<h1>Form Details</h1>
+<h2><i>Reactive formms</i></h2>
+<label class="center-block">Name:
+<input class="form-control" [formControl]="name">
+<div class="c1" *ngIf="name.touched && name.errors">ENter the correct value</div>
+
+</label>

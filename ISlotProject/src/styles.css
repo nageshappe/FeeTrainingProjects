@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "node_modules/bootstrap/dist/css/bootstrap.css";
+.topnav{
+    
+    margin :auto;
+    padding :20px;
+    font: 2em sans-serif;
+    color: white;
+    background-color: gray;
+
+}
