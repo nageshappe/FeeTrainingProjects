@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ISummary } from './models/summary';
-import { Http } from '@angular/http';
+import {Http, HttpModule} from '@angular/http';
 import * as moment from 'moment';
 import { ITemperature } from './models/temperature';
 
