@@ -3,6 +3,7 @@ import { LoginComponent } from "./pages/login/login.component";
 import { LandingPageComponent } from "./pages/landing-page/landing-page.component";
 import { RegisterComponent } from "./pages/register/register.component";
 
+
 export const route : Route[] =[
     {
         path: 'login',
@@ -15,7 +16,7 @@ export const route : Route[] =[
      {
          path:'',
          component :LandingPageComponent
-     }
-
+     },
+     
 ]
     

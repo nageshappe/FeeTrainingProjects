@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import  * as $ from "jquery";
+import { Router } from '@angular/router';
 
 declare var require: any
 
@@ -12,7 +13,7 @@ declare var require: any
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
   }
@@ -43,10 +44,11 @@ export class RegisterComponent implements OnInit {
       url: 'https://islot-2edfc.firebaseio.com/islot_data.json',
       type: "POST",
       data: JSON.stringify(param),
-      success: function () {
+      success: () => {
         
 
         alert("success");
+        this.route.navigate(['/login'])
         
       },
       error: function(error) {
